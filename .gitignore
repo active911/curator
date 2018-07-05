@@ -30,3 +30,4 @@ test/.DS_Store
 vcruntime140.dll
 wheelhouse
 windows
+config.yml

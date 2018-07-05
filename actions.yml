@@ -1,0 +1,12 @@
+actions:
+  1:
+    action: delete_indices
+    description: Delete indices with creation date older than 7 days
+    options:
+      ignore_empty_list: True
+    filters:
+      - filtertype: age
+        source: creation_date
+        creation: older
+        unit: days
+        unit_count: 7

@@ -1,0 +1,11 @@
+FROM debian:stretch as builder
+
+RUN apt-get update && \
+    apt-get install -y cron python-pip && \
+    pip install elasticsearch-curator && \
+    touch /var/log/cron.log
+
+COPY . /
+COPY /crontab /etc/cron.d/curator-cron
+
+CMD ["/entrypoint.sh"]
