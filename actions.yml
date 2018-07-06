@@ -7,6 +7,6 @@ actions:
     filters:
       - filtertype: age
         source: creation_date
-        creation: older
+        direction: older
         unit: days
         unit_count: 7
