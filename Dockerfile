@@ -8,4 +8,6 @@ RUN apt-get update && \
 COPY . /
 COPY /curator /etc/cron.daily/curator
 
+RUN chmod a+x /etc/cron.daily/curator
+
 CMD ["/entrypoint.sh"]
