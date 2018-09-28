@@ -1,1 +1,0 @@
-0 0 * * * root curator --config /config.yml /actions.yml > /var/log/cron.log

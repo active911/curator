@@ -6,6 +6,6 @@ RUN apt-get update && \
     touch /var/log/cron.log
 
 COPY . /
-COPY /crontab /etc/cron.d/curator-cron
+COPY /curator /etc/cron.daily/curator
 
 CMD ["/entrypoint.sh"]
